@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entertainment Rankings | My Personal Space</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">BRIAN</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="media.html" class="nav-link active">Media</a></li>
+      <li><a href="cars.html" class="nav-link">Cars</a></li>
+      <li><a href="hobbies.html" class="nav-link">Hobbies</a></li>
+      <li><a href="professional.html" class="nav-link">Professional</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="page container">
+    <div class="section-header">
+      <span class="section-tag">// What I'm Into</span>
+      <h1 class="section-title">My <span class="gradient-text">Rankings</span></h1>
+      <p class="section-description">
+        Entertainment is a huge part of my life. Here are my favorite albums, artists, 
+        movies, and TV shows — ranked.
+      </p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" data-tab="all-time">Albums</button>
+      <button class="tab" data-tab="by-year">Albums by Year</button>
+      <button class="tab" data-tab="artists">Artists</button>
+      <button class="tab" data-tab="movies">Movies</button>
+      <button class="tab" data-tab="tv-shows">TV Shows</button>
+    </div>
+
+    <!-- All Time Rankings -->
+    <div class="tab-panel active" id="all-time">
+      <div class="album-list">
+        <div class="album-item animate-in stagger-1" style="opacity: 0;">
+          <span class="album-rank">01</span>
+          <img class="album-cover" src="assets/Album Covers/MBDTFBallerina2.webp" alt="My Beautiful Dark Twisted Fantasy album cover">
+          <div class="album-info">
+            <span class="album-title">My Dark Beautiful Twisted Fantasy</span>
+            <span class="album-artist">Kanye West</span>
+          </div>
+          <span class="album-year">2010</span>
+        </div>
+
+        <div class="album-item animate-in stagger-2" style="opacity: 0;">
+          <span class="album-rank">02</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #2d132c, #801336);"></div>
+          <div class="album-info">
+            <span class="album-title">SECOND FAVORITE</span>
+            <span class="album-artist">Artist Name</span>
+          </div>
+          <span class="album-year">2019</span>
+        </div>
+
+        <div class="album-item animate-in stagger-3" style="opacity: 0;">
+          <span class="album-rank">03</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #1f4037, #99f2c8);"></div>
+          <div class="album-info">
+            <span class="album-title">THIRD PLACE ALBUM</span>
+            <span class="album-artist">Artist Name</span>
+          </div>
+          <span class="album-year">2018</span>
+        </div>
+
+        <div class="album-item animate-in stagger-4" style="opacity: 0;">
+          <span class="album-rank">04</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #373b44, #4286f4);"></div>
+          <div class="album-info">
+            <span class="album-title">ANOTHER GREAT ALBUM</span>
+            <span class="album-artist">Artist Name</span>
+          </div>
+          <span class="album-year">2021</span>
+        </div>
+
+        <div class="album-item animate-in stagger-5" style="opacity: 0;">
+          <span class="album-rank">05</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #ee0979, #ff6a00);"></div>
+          <div class="album-info">
+            <span class="album-title">FIFTH FAVORITE</span>
+            <span class="album-artist">Artist Name</span>
+          </div>
+          <span class="album-year">2017</span>
+        </div>
+
+        <div class="album-item animate-in stagger-6" style="opacity: 0;">
+          <span class="album-rank">06</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #0f0c29, #302b63);"></div>
+          <div class="album-info">
+            <span class="album-title">SIXTH PLACE</span>
+            <span class="album-artist">Artist Name</span>
+          </div>
+          <span class="album-year">2022</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">07</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #834d9b, #d04ed6);"></div>
+          <div class="album-info">
+            <span class="album-title">SEVENTH ALBUM</span>
+            <span class="album-artist">Artist Name</span>
+          </div>
+          <span class="album-year">2016</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">08</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #11998e, #38ef7d);"></div>
+          <div class="album-info">
+            <span class="album-title">EIGHTH FAVORITE</span>
+            <span class="album-artist">Artist Name</span>
+          </div>
+          <span class="album-year">2023</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">09</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #fc4a1a, #f7b733);"></div>
+          <div class="album-info">
+            <span class="album-title">NINTH PLACE</span>
+            <span class="album-artist">Artist Name</span>
+          </div>
+          <span class="album-year">2015</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">10</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #654ea3, #eaafc8);"></div>
+          <div class="album-info">
+            <span class="album-title">TENTH ALBUM</span>
+            <span class="album-artist">Artist Name</span>
+          </div>
+          <span class="album-year">2024</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- By Year Rankings -->
+    <div class="tab-panel" id="by-year">
+      <div class="year-filter">
+        <label for="year-select">Select Year:</label>
+        <select id="year-select" class="year-select">
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+        </select>
+      </div>
+
+      <div class="album-list" id="yearly-albums">
+        <div class="album-item">
+          <span class="album-rank">01</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #667eea, #764ba2);"></div>
+          <div class="album-info">
+            <span class="album-title">BEST OF THE YEAR</span>
+            <span class="album-artist">Artist Name</span>
+          </div>
+          <span class="album-year">2025</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">02</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
+          <div class="album-info">
+            <span class="album-title">RUNNER UP</span>
+            <span class="album-artist">Artist Name</span>
+          </div>
+          <span class="album-year">2025</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">03</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
+          <div class="album-info">
+            <span class="album-title">THIRD BEST</span>
+            <span class="album-artist">Artist Name</span>
+          </div>
+          <span class="album-year">2025</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">04</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #43e97b, #38f9d7);"></div>
+          <div class="album-info">
+            <span class="album-title">FOURTH PLACE</span>
+            <span class="album-artist">Artist Name</span>
+          </div>
+          <span class="album-year">2025</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">05</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #fa709a, #fee140);"></div>
+          <div class="album-info">
+            <span class="album-title">FIFTH BEST</span>
+            <span class="album-artist">Artist Name</span>
+          </div>
+          <span class="album-year">2025</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Favorite Artists -->
+    <div class="tab-panel" id="artists">
+      <div class="album-list">
+        <div class="album-item">
+          <span class="album-rank">01</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 50%;"></div>
+          <div class="album-info">
+            <span class="album-title">FAVORITE ARTIST</span>
+            <span class="album-artist">Genre / Style</span>
+          </div>
+          <span class="album-year">🎤</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">02</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 50%;"></div>
+          <div class="album-info">
+            <span class="album-title">SECOND ARTIST</span>
+            <span class="album-artist">Genre / Style</span>
+          </div>
+          <span class="album-year">🎤</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">03</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 50%;"></div>
+          <div class="album-info">
+            <span class="album-title">THIRD ARTIST</span>
+            <span class="album-artist">Genre / Style</span>
+          </div>
+          <span class="album-year">🎤</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">04</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #43e97b, #38f9d7); border-radius: 50%;"></div>
+          <div class="album-info">
+            <span class="album-title">FOURTH ARTIST</span>
+            <span class="album-artist">Genre / Style</span>
+          </div>
+          <span class="album-year">🎤</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">05</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #fa709a, #fee140); border-radius: 50%;"></div>
+          <div class="album-info">
+            <span class="album-title">FIFTH ARTIST</span>
+            <span class="album-artist">Genre / Style</span>
+          </div>
+          <span class="album-year">🎤</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">06</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb); border-radius: 50%;"></div>
+          <div class="album-info">
+            <span class="album-title">SIXTH ARTIST</span>
+            <span class="album-artist">Genre / Style</span>
+          </div>
+          <span class="album-year">🎤</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">07</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #ff9a9e, #fecfef); border-radius: 50%;"></div>
+          <div class="album-info">
+            <span class="album-title">SEVENTH ARTIST</span>
+            <span class="album-artist">Genre / Style</span>
+          </div>
+          <span class="album-year">🎤</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">08</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #a1c4fd, #c2e9fb); border-radius: 50%;"></div>
+          <div class="album-info">
+            <span class="album-title">EIGHTH ARTIST</span>
+            <span class="album-artist">Genre / Style</span>
+          </div>
+          <span class="album-year">🎤</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">09</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #d299c2, #fef9d7); border-radius: 50%;"></div>
+          <div class="album-info">
+            <span class="album-title">NINTH ARTIST</span>
+            <span class="album-artist">Genre / Style</span>
+          </div>
+          <span class="album-year">🎤</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">10</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #89f7fe, #66a6ff); border-radius: 50%;"></div>
+          <div class="album-info">
+            <span class="album-title">TENTH ARTIST</span>
+            <span class="album-artist">Genre / Style</span>
+          </div>
+          <span class="album-year">🎤</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Favorite Movies -->
+    <div class="tab-panel" id="movies">
+      <div class="album-list">
+        <div class="album-item">
+          <span class="album-rank">01</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #1a1a2e, #e94560);"></div>
+          <div class="album-info">
+            <span class="album-title">FAVORITE MOVIE</span>
+            <span class="album-artist">Director Name</span>
+          </div>
+          <span class="album-year">2020</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">02</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #0f3460, #16213e);"></div>
+          <div class="album-info">
+            <span class="album-title">SECOND MOVIE</span>
+            <span class="album-artist">Director Name</span>
+          </div>
+          <span class="album-year">2019</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">03</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #533483, #e94560);"></div>
+          <div class="album-info">
+            <span class="album-title">THIRD MOVIE</span>
+            <span class="album-artist">Director Name</span>
+          </div>
+          <span class="album-year">2018</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">04</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #2c3e50, #4ca1af);"></div>
+          <div class="album-info">
+            <span class="album-title">FOURTH MOVIE</span>
+            <span class="album-artist">Director Name</span>
+          </div>
+          <span class="album-year">2017</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">05</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #141e30, #243b55);"></div>
+          <div class="album-info">
+            <span class="album-title">FIFTH MOVIE</span>
+            <span class="album-artist">Director Name</span>
+          </div>
+          <span class="album-year">2016</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">06</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #4b134f, #c94b4b);"></div>
+          <div class="album-info">
+            <span class="album-title">SIXTH MOVIE</span>
+            <span class="album-artist">Director Name</span>
+          </div>
+          <span class="album-year">2015</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">07</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #232526, #414345);"></div>
+          <div class="album-info">
+            <span class="album-title">SEVENTH MOVIE</span>
+            <span class="album-artist">Director Name</span>
+          </div>
+          <span class="album-year">2014</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">08</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #200122, #6f0000);"></div>
+          <div class="album-info">
+            <span class="album-title">EIGHTH MOVIE</span>
+            <span class="album-artist">Director Name</span>
+          </div>
+          <span class="album-year">2013</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">09</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #360033, #0b8793);"></div>
+          <div class="album-info">
+            <span class="album-title">NINTH MOVIE</span>
+            <span class="album-artist">Director Name</span>
+          </div>
+          <span class="album-year">2012</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">10</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #1f1c2c, #928dab);"></div>
+          <div class="album-info">
+            <span class="album-title">TENTH MOVIE</span>
+            <span class="album-artist">Director Name</span>
+          </div>
+          <span class="album-year">2011</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Favorite TV Shows -->
+    <div class="tab-panel" id="tv-shows">
+      <div class="album-list">
+        <div class="album-item">
+          <span class="album-rank">01</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #00b4db, #0083b0);"></div>
+          <div class="album-info">
+            <span class="album-title">FAVORITE TV SHOW</span>
+            <span class="album-artist">Network / Platform</span>
+          </div>
+          <span class="album-year">📺</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">02</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #e65c00, #f9d423);"></div>
+          <div class="album-info">
+            <span class="album-title">SECOND TV SHOW</span>
+            <span class="album-artist">Network / Platform</span>
+          </div>
+          <span class="album-year">📺</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">03</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #7b4397, #dc2430);"></div>
+          <div class="album-info">
+            <span class="album-title">THIRD TV SHOW</span>
+            <span class="album-artist">Network / Platform</span>
+          </div>
+          <span class="album-year">📺</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">04</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #56ab2f, #a8e063);"></div>
+          <div class="album-info">
+            <span class="album-title">FOURTH TV SHOW</span>
+            <span class="album-artist">Network / Platform</span>
+          </div>
+          <span class="album-year">📺</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">05</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #f857a6, #ff5858);"></div>
+          <div class="album-info">
+            <span class="album-title">FIFTH TV SHOW</span>
+            <span class="album-artist">Network / Platform</span>
+          </div>
+          <span class="album-year">📺</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">06</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #4568dc, #b06ab3);"></div>
+          <div class="album-info">
+            <span class="album-title">SIXTH TV SHOW</span>
+            <span class="album-artist">Network / Platform</span>
+          </div>
+          <span class="album-year">📺</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">07</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #134e5e, #71b280);"></div>
+          <div class="album-info">
+            <span class="album-title">SEVENTH TV SHOW</span>
+            <span class="album-artist">Network / Platform</span>
+          </div>
+          <span class="album-year">📺</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">08</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #c33764, #1d2671);"></div>
+          <div class="album-info">
+            <span class="album-title">EIGHTH TV SHOW</span>
+            <span class="album-artist">Network / Platform</span>
+          </div>
+          <span class="album-year">📺</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">09</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #f79d00, #64f38c);"></div>
+          <div class="album-info">
+            <span class="album-title">NINTH TV SHOW</span>
+            <span class="album-artist">Network / Platform</span>
+          </div>
+          <span class="album-year">📺</span>
+        </div>
+
+        <div class="album-item">
+          <span class="album-rank">10</span>
+          <div class="album-cover" style="background: linear-gradient(135deg, #ee0979, #ff6a00);"></div>
+          <div class="album-info">
+            <span class="album-title">TENTH TV SHOW</span>
+            <span class="album-artist">Network / Platform</span>
+          </div>
+          <span class="album-year">📺</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html" class="footer-link">Home</a>
+      <a href="media.html" class="footer-link">Media</a>
+      <a href="cars.html" class="footer-link">Cars</a>
+      <a href="hobbies.html" class="footer-link">Hobbies</a>
+      <a href="professional.html" class="footer-link">Professional</a>
+    </div>
+    <p class="footer-copyright">© 2026 Teddy & Otters LLC. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

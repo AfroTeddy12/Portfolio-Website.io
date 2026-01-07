@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome | My Personal Space</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">BRIAN</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="media.html" class="nav-link">Media</a></li>
+      <li><a href="cars.html" class="nav-link">Cars</a></li>
+      <li><a href="hobbies.html" class="nav-link">Hobbies</a></li>
+      <li><a href="professional.html" class="nav-link">Professional</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-badge">// MY LITTLE CORNER OF THE INTERNET</span>
+      <h1 class="hero-title">
+        <span class="gradient-text">PASSION.</span><br>
+        <span class="gradient-text">CREATIVITY.</span><br>
+        <span class="gradient-text">DRIVE.</span>
+      </h1>
+      <p class="hero-subtitle">
+       Welcome to my personal corner of the internet.
+       Part portfolio, part personal space, part playground.
+       You'll some Rankings, My random thoughts, side projects, and some of my professional skills.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="professional.html" class="btn btn-primary">View My Work →</a>
+        <a href="#explore" class="btn btn-secondary">Explore</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore Section -->
+  <section id="explore" class="container" style="padding-bottom: 6rem;">
+    <div class="section-header">
+      <span class="section-tag">// Discover</span>
+      <h2 class="section-title">Explore <span class="gradient-text">My World</span></h2>
+      <p class="section-description">
+        From album rankings to car mods that may or may not be finished, this is the stuff that makes me, me. 
+      </p>
+    </div>
+
+    <div class="cards-grid">
+      <!-- Music Card -->
+      <a href="media.html" class="card animate-in stagger-1" style="opacity: 0;">
+        <div class="card-icon">🎬</div>
+        <h3 class="card-title">MEDIA RANKINGS</h3>
+        <p class="card-description">
+         My Favorite Albums, Artists, Movies, and TV Shows ranked carefully and updated irresponisbly.
+        </p>
+        <span class="card-link">View Rankings →</span>
+      </a>
+
+      <!-- Cars Card -->
+      <a href="cars.html" class="card animate-in stagger-2" style="opacity: 0;">
+        <div class="card-icon">🚗</div>
+        <h3 class="card-title">CAR CULTURE</h3>
+        <p class="card-description">
+          Meet Sophia my daily driver and the progress of her build.
+        </p>
+        <span class="card-link">See My Build →</span>
+      </a>
+
+      <!-- Hobbies Card -->
+      <a href="hobbies.html" class="card animate-in stagger-3" style="opacity: 0;">
+        <div class="card-icon">⚡</div>
+        <h3 class="card-title">HOBBIES & INTERESTS</h3>
+        <p class="card-description">
+          The things I love when I'm not in school or daydreaming.
+          Gaming, Tech, Fitness, and whatever else I hyperfixate on.
+        </p>
+        <span class="card-link">Explore Hobbies →</span>
+      </a>
+
+      <!-- Professional Card -->
+      <a href="professional.html" class="card animate-in stagger-4" style="opacity: 0;">
+        <div class="card-icon">💼</div>
+        <h3 class="card-title">PROFESSIONAL</h3>
+        <p class="card-description">
+          The Serious Stuff. My Resume, Portfolio, and Professional Experience.
+          (Proof I know what I'm doing)
+        </p>
+        <span class="card-link">View Portfolio →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html" class="footer-link">Home</a>
+      <a href="media.html" class="footer-link">Media</a>
+      <a href="cars.html" class="footer-link">Cars</a>
+      <a href="hobbies.html" class="footer-link">Hobbies</a>
+      <a href="professional.html" class="footer-link">Professional</a>
+    </div>
+    <p class="footer-copyright">© 2026 Teddy & Otters LLC. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
