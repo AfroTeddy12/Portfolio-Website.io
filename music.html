@@ -8,22 +8,22 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="module-page" data-loader-title="Media Module">
   <!-- Navigation -->
   <nav class="nav">
-    <a href="index.html" class="nav-logo">BRIAN</a>
+    <a href="menu.html" class="nav-logo">BRIAN</a>
     <button class="nav-toggle" aria-label="Toggle navigation">
       <span></span>
       <span></span>
       <span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="menu.html" class="nav-link">Menu</a></li>
       <li><a href="media.html" class="nav-link active">Media</a></li>
       <li><a href="cars.html" class="nav-link">Cars</a></li>
       <li><a href="hobbies.html" class="nav-link">Hobbies</a></li>
@@ -32,27 +32,54 @@
   </nav>
 
   <!-- Main Content -->
-  <main class="page container">
-    <div class="section-header">
-      <span class="section-tag">// What I'm Into</span>
-      <h1 class="section-title">My <span class="gradient-text">Rankings</span></h1>
-      <p class="section-description">
-        Entertainment is a huge part of my life. Here are my favorite albums, artists, 
-        movies, and TV shows — ranked.
-      </p>
-    </div>
+  <main class="page container module-dashboard-page">
+    <section class="module-dashboard-top" id="overview">
+      <article class="module-dashboard-intro card">
+        <span class="section-tag">// What I'm Into</span>
+        <h1 class="module-dashboard-title">Media <span class="gradient-text">Rankings</span></h1>
+        <p class="module-dashboard-copy">
+          This is the long-form ranking board for albums, artists, movies, and TV shows.
+          Use tabs to move across categories quickly.
+        </p>
+        <div class="module-dashboard-meta">
+          <div class="module-meta-item">
+            <span class="status-label">Mode</span>
+            <span class="status-value">Archive Rankings</span>
+          </div>
+          <div class="module-meta-item">
+            <span class="status-label">Categories</span>
+            <span class="status-value">5 Tabs</span>
+          </div>
+          <div class="module-meta-item">
+            <span class="status-label">Depth</span>
+            <span class="status-value">Extended Lists</span>
+          </div>
+        </div>
+      </article>
+      <aside class="module-dashboard-aside card">
+        <h2 class="module-dashboard-aside-title">Quick Guide</h2>
+        <ul class="module-dashboard-list">
+          <li><strong>Albums:</strong> all-time and by-year ranking tabs.</li>
+          <li><strong>Artists:</strong> creator ranking board.</li>
+          <li><strong>Movies/TV:</strong> full entertainment ordering.</li>
+        </ul>
+      </aside>
+    </section>
 
-    <!-- Tabs -->
-    <div class="tabs">
-      <button class="tab active" data-tab="all-time">Albums</button>
-      <button class="tab" data-tab="by-year">Albums by Year</button>
-      <button class="tab" data-tab="artists">Artists</button>
-      <button class="tab" data-tab="movies">Movies</button>
-      <button class="tab" data-tab="tv-shows">TV Shows</button>
-    </div>
+    <div class="cars-menu-shell">
+      <aside class="pause-menu animate-in stagger-2">
+        <h2 class="pause-menu-title">Menu</h2>
+        <a class="menu-option active" href="#overview">Overview</a>
+        <a class="menu-option" href="#all-time">Albums</a>
+        <a class="menu-option" href="#by-year">Albums by Year</a>
+        <a class="menu-option" href="#artists">Artists</a>
+        <a class="menu-option" href="#movies">Movies</a>
+        <a class="menu-option" href="#tv-shows">TV Shows</a>
+      </aside>
 
+      <section class="menu-content">
     <!-- All Time Rankings -->
-    <div class="tab-panel active" id="all-time">
+    <section class="menu-panel" id="all-time">
       <div class="album-list">
         <div class="album-item animate-in stagger-1" style="opacity: 0;">
           <span class="album-rank">01</span>
@@ -154,10 +181,10 @@
           <span class="album-year">2024</span>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- By Year Rankings -->
-    <div class="tab-panel" id="by-year">
+    <section class="menu-panel" id="by-year">
       <div class="year-filter">
         <label for="year-select">Select Year:</label>
         <select id="year-select" class="year-select">
@@ -221,10 +248,10 @@
           <span class="album-year">2025</span>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Favorite Artists -->
-    <div class="tab-panel" id="artists">
+    <section class="menu-panel" id="artists">
       <div class="album-list">
         <div class="album-item">
           <span class="album-rank">01</span>
@@ -326,10 +353,10 @@
           <span class="album-year">🎤</span>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Favorite Movies -->
-    <div class="tab-panel" id="movies">
+    <section class="menu-panel" id="movies">
       <div class="album-list">
         <div class="album-item">
           <span class="album-rank">01</span>
@@ -431,10 +458,10 @@
           <span class="album-year">2011</span>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Favorite TV Shows -->
-    <div class="tab-panel" id="tv-shows">
+    <section class="menu-panel" id="tv-shows">
       <div class="album-list">
         <div class="album-item">
           <span class="album-rank">01</span>
@@ -536,13 +563,15 @@
           <span class="album-year">📺</span>
         </div>
       </div>
+    </section>
+      </section>
     </div>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-links">
-      <a href="index.html" class="footer-link">Home</a>
+      <a href="menu.html" class="footer-link">Main Menu</a>
       <a href="media.html" class="footer-link">Media</a>
       <a href="cars.html" class="footer-link">Cars</a>
       <a href="hobbies.html" class="footer-link">Hobbies</a>

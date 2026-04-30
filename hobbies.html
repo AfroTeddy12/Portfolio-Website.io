@@ -8,43 +8,78 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="module-page" data-loader-title="Hobbies Module">
   <!-- Navigation -->
   <nav class="nav">
-    <a href="index.html" class="nav-logo">TEDDY</a>
+    <a href="menu.html" class="nav-logo">TEDDY</a>
     <button class="nav-toggle" aria-label="Toggle navigation">
       <span></span>
       <span></span>
       <span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="index.html" class="nav-link">Home</a></li>
-      <li><a href="media.html" class="nav-link">Media</a></li>
+      <li><a href="menu.html" class="nav-link">Menu</a></li>
+      <li><a href="media.html" class="nav-link">Playlists</a></li>
+      <li><a href="rankings.html" class="nav-link">Rankings</a></li>
       <li><a href="cars.html" class="nav-link">Cars</a></li>
       <li><a href="hobbies.html" class="nav-link active">Hobbies</a></li>
       <li><a href="professional.html" class="nav-link">Professional</a></li>
-      <li><a href="log.html" class="nav-link">Log</a></li>
     </ul>
   </nav>
 
   <!-- Main Content -->
-  <main class="page container">
-    <div class="section-header">
-      <span class="section-tag">// Beyond Work</span>
-      <h1 class="section-title">Hobbies & <span class="gradient-text">Interests</span></h1>
-      <p class="section-description">
-        Work is important, but this is the stuff that keeps me sane.
-        Interests change, obsessions rotate, but curiosity stays unquenched.
-      </p>
-    </div>
+  <main class="page container module-dashboard-page">
+    <section class="module-dashboard-top" id="overview">
+      <article class="module-dashboard-intro card">
+        <span class="section-tag">// Beyond Work</span>
+        <h1 class="module-dashboard-title">Hobbies & <span class="gradient-text">Interests</span></h1>
+        <p class="module-dashboard-copy">
+          This module tracks what I spend my off-hours on, from gaming and fitness
+          to tech experiments and favorite media.
+        </p>
+        <div class="module-dashboard-meta">
+          <div class="module-meta-item">
+            <span class="status-label">Mode</span>
+            <span class="status-value">Lifestyle Board</span>
+          </div>
+          <div class="module-meta-item">
+            <span class="status-label">Main Sections</span>
+            <span class="status-value">Hobbies + Favorites</span>
+          </div>
+          <div class="module-meta-item">
+            <span class="status-label">Data Type</span>
+            <span class="status-value">Personal Rotation</span>
+          </div>
+        </div>
+      </article>
+      <aside class="module-dashboard-aside card">
+        <h2 class="module-dashboard-aside-title">Quick Guide</h2>
+        <ul class="module-dashboard-list">
+          <li><strong>Hobbies Grid:</strong> core interests at a glance.</li>
+          <li><strong>Currently:</strong> what is active right now.</li>
+          <li><strong>Favorites + Facts:</strong> quick personal stats.</li>
+        </ul>
+      </aside>
+    </section>
 
+    <div class="cars-menu-shell">
+      <aside class="pause-menu animate-in stagger-2">
+        <h2 class="pause-menu-title">Menu</h2>
+        <a class="menu-option active" href="#overview">Overview</a>
+        <a class="menu-option" href="#hobbies-grid">Hobbies</a>
+        <a class="menu-option" href="#currently">Currently</a>
+        <a class="menu-option" href="#favorites">Favorites</a>
+        <a class="menu-option" href="#fun-facts">Fun Facts</a>
+      </aside>
+
+      <section class="menu-content">
     <!-- Hobbies Grid -->
-    <div class="hobbies-grid">
+    <div class="hobbies-grid" id="hobbies-grid">
       <div class="hobby-card animate-in stagger-1" style="opacity: 0;">
         <div class="hobby-icon">🎮</div>
         <h3 class="hobby-title">GAMING</h3>
@@ -101,7 +136,7 @@ Chasing good lighting and pretending I planned the shot all along.
     </div>
 
     <!-- Currently Section -->
-    <div style="margin-top: 5rem;">
+    <div style="margin-top: 5rem;" id="currently">
       <h2 class="text-center mb-4" style="font-family: var(--font-display); font-size: 2.5rem;">
         <span style="color: var(--accent-tertiary);">//</span> CURRENTLY
       </h2>
@@ -112,10 +147,10 @@ Chasing good lighting and pretending I planned the shot all along.
             🎧 LISTENING TO
           </h3>
           <p style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.5rem;">
-            Aminé
+            JID
           </p>
           <p style="color: var(--text-secondary);">
-            His music has been running the soundtrack of my week
+            Honestly hes the best rapper whenever he gets featured on a song.
           </p>
         </div>
 
@@ -124,10 +159,10 @@ Chasing good lighting and pretending I planned the shot all along.
             🎮 PLAYING
           </h3>
           <p style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.5rem;">
-            The Witcher 3
+            Modded Skyrim
           </p>
           <p style="color: var(--text-secondary);">
-            First time playing The Witcher 3 and I’ve already died to enemies I wasn’t even trying to fight.
+            I'm Back to Modded Skyrim and I'm loving it.
           </p>
         </div>
 
@@ -136,10 +171,10 @@ Chasing good lighting and pretending I planned the shot all along.
             📺 WATCHING
           </h3>
           <p style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.5rem;">
-            Scott Pilgrim Takes Off
+            Maul: Shadow Lord
           </p>
           <p style="color: var(--text-secondary);">
-            Scott Pilgrim Takes Off has me fully entertained from the style, the humor, the chaos, and the 7 evil exes.
+            Easily the best Star Wars story in the entire franchise. I hope they make more animated content.
           </p>
         </div>
 
@@ -148,18 +183,17 @@ Chasing good lighting and pretending I planned the shot all along.
             📚 READING
           </h3>
           <p style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 0.5rem;">
-            Brigands & Breadknives
+            Katabasis
           </p>
           <p style="color: var(--text-secondary);">
-            A cozy fantasy that somehow mixes warm vibes with 
-            great worldbuilding, great characters, and just enough chaos to keep me invested.
+            I have not read a single word of this book... yet.
           </p>
         </div>
       </div>
     </div>
 
     <!-- Favorite Things -->
-    <div style="margin-top: 5rem;">
+    <div style="margin-top: 5rem;" id="favorites">
       <h2 class="text-center mb-4" style="font-family: var(--font-display); font-size: 2.5rem;">
         <span style="color: var(--accent-warm);">//</span> FAVORITES
       </h2>
@@ -170,7 +204,7 @@ Chasing good lighting and pretending I planned the shot all along.
             <h4 style="font-family: var(--font-mono); color: var(--accent-primary); font-size: 0.8rem; margin-bottom: 0.75rem;">
               FAVORITE GYM EXERCISE
             </h4>
-            <p style="font-family: var(--font-display); font-size: 1.2rem;">Incline Bench Press</p>
+            <p style="font-family: var(--font-display); font-size: 1.2rem;">Deadlifts</p>
           </div>
           
           <div>
@@ -212,7 +246,7 @@ Chasing good lighting and pretending I planned the shot all along.
     </div>
 
     <!-- Fun Facts -->
-    <div style="margin-top: 5rem;">
+    <div style="margin-top: 5rem;" id="fun-facts">
       <h2 class="text-center mb-4" style="font-family: var(--font-display); font-size: 2.5rem;">
         <span style="color: var(--accent-secondary);">//</span> FUN FACTS
       </h2>
@@ -240,19 +274,21 @@ Chasing good lighting and pretending I planned the shot all along.
         </div>
       </div>
     </div>
+      </section>
+    </div>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-links">
-      <a href="index.html" class="footer-link">Home</a>
-      <a href="media.html" class="footer-link">Media</a>
+      <a href="menu.html" class="footer-link">Main Menu</a>
+      <a href="media.html" class="footer-link">Playlists</a>
+      <a href="rankings.html" class="footer-link">Rankings</a>
       <a href="cars.html" class="footer-link">Cars</a>
       <a href="hobbies.html" class="footer-link">Hobbies</a>
       <a href="professional.html" class="footer-link">Professional</a>
-      <a href="log.html" class="footer-link">Log</a>
     </div>
-    <p class="footer-copyright">© 2026 Teddy & Otters LLC. All rights reserved.</p>
+    <p class="footer-copyright">© 2026 Teddy <a href="deja.html" class="footer-ampersand">&</a> Otters LLC. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>

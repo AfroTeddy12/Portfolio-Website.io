@@ -8,170 +8,214 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="cars-menu-page module-page" data-loader-title="Garage Module">
+
   <!-- Navigation -->
   <nav class="nav">
-    <a href="index.html" class="nav-logo">TEDDY</a>
+    <a href="menu.html" class="nav-logo">TEDDY</a>
     <button class="nav-toggle" aria-label="Toggle navigation">
       <span></span>
       <span></span>
       <span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="index.html" class="nav-link">Home</a></li>
-      <li><a href="media.html" class="nav-link">Media</a></li>
+      <li><a href="menu.html" class="nav-link">Menu</a></li>
+      <li><a href="media.html" class="nav-link">Playlists</a></li>
+      <li><a href="rankings.html" class="nav-link">Rankings</a></li>
       <li><a href="cars.html" class="nav-link active">Cars</a></li>
       <li><a href="hobbies.html" class="nav-link">Hobbies</a></li>
       <li><a href="professional.html" class="nav-link">Professional</a></li>
-      <li><a href="log.html" class="nav-link">Log</a></li>
     </ul>
   </nav>
 
   <!-- Main Content -->
-  <main class="page container">
-    <div class="section-header">
-      <span class="section-tag">// The Build</span>
-      <h1 class="section-title">MEET <span class="gradient-text">SOPHIA</span></h1>
-      <p class="section-description">
-        Welcome to my garage. Check out my build progress, current mods, 
-        and what's coming next. Every car has a story this is mine and hers.
-      </p>
-    </div>
-
-    <!-- Car Specs Banner -->
-    <div class="card" style="margin-bottom: 3rem; text-align: center;">
-      <h2 style="font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 0.5rem;">
-        SOPHIA THE CIVIC
-      </h2>
-      <p style="font-family: var(--font-mono); color: var(--accent-primary); font-size: 1.1rem;">
-        2026 • Honda • Civic • Sport
-      </p>
-      <p style="color: var(--text-secondary); margin-top: 1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-        She's my daily driver and completely stock right now but shes not staying that way. She's reliable enough to handle my errands, 
-        sporty enough to make me pretend I’m in a movie, and mod-friendly enough to keep me busy.
-        Slowly but surely turning it into the car I pictured in my head.
-      </p>
-    </div>
-
-    <!-- Photo Gallery -->
-    <h2 class="mb-3" style="font-family: var(--font-display); font-size: 2rem;">
-      <span style="color: var(--accent-primary);">//</span> GALLERY
-    </h2>
-    
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="assets/Cars/base.jpg" alt="Sophia - Front View">
-        <div class="gallery-overlay">
-          <span class="gallery-caption">Front View</span>
+  <main class="page container cars-main module-dashboard-page">
+    <section class="module-dashboard-top">
+      <article class="module-dashboard-intro card animate-in stagger-1">
+        <span class="section-tag">/ Garage Command</span>
+        <h1 class="module-dashboard-title">Sophia <span class="gradient-text">Control Room</span></h1>
+        <p class="module-dashboard-copy">
+          Build progress and garage activity are organized into modules so you can jump
+          from overview to timeline without hunting for details.
+        </p>
+        <div class="module-dashboard-meta">
+          <div class="module-meta-item">
+            <span class="status-label">Build Stage</span>
+            <span class="status-value">Early Progress</span>
+          </div>
+          <div class="module-meta-item">
+            <span class="status-label">Vehicle</span>
+            <span class="status-value">2026 Honda Civic Sport</span>
+          </div>
+          <div class="module-meta-item">
+            <span class="status-label">Mode</span>
+            <span class="status-value">Garage Tracking</span>
+          </div>
         </div>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="assets/Cars/outside.jpg" alt="Sophia - Outside Shot">
-        <div class="gallery-overlay">
-          <span class="gallery-caption">Outside Shot</span>
-        </div>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="assets/Cars/Garage.jpg" alt="Sophia - In the Garage">
-        <div class="gallery-overlay">
-          <span class="gallery-caption">In the Garage</span>
-        </div>
-      </div>
-      
-      <div class="gallery-item">
-        <img src="assets/Cars/wires.jpg" alt="Sophia - Wiring Work">
-        <div class="gallery-overlay">
-          <span class="gallery-caption">Installing Door Sills</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Mods Sections -->
-    <div class="mods-container">
-      <div class="mods-section mods-current">
-        <h3>CURRENT MODS</h3>
-        <ul class="mod-list">
-          <li class="mod-item">Stock</li>
-          <li class="mod-item">Illuminated Door Sills</li>
+      </article>
+      <aside class="module-dashboard-aside card animate-in stagger-2">
+        <h2 class="module-dashboard-aside-title">Quick Guide</h2>
+        <ul class="module-dashboard-list">
+          <li><strong>Overview:</strong> current state and identity.</li>
+          <li><strong>Gallery:</strong> visual progress snapshots.</li>
+          <li><strong>Mod Queue:</strong> current and next upgrades.</li>
+          <li><strong>Timeline:</strong> build milestones.</li>
         </ul>
-      </div>
+      </aside>
+    </section>
 
-      <div class="mods-section mods-planned">
-        <h3>NEXT MODS</h3>
-        <ul class="mod-list">
-          <li class="mod-item">Window Tint</li>
-          <li class="mod-item">Interior LED Light Kit</li>
-          <li class="mod-item">Front Lip Spoiler</li>
-          <li class="mod-item">Side Skirts</li>
-          <li class="mod-item">Rear Diffuser</li>
-          <li class="mod-item">Sequential Taillights</li>
-          <li class="mod-item">Rear Bumper Light Upgrade</li>
-          <li class="mod-item">Coilovers</li>
-          <li class="mod-item">Seat Covers</li>
-        </ul>
-        
-      </div>
-    </div>
+    <div class="cars-menu-shell">
+      <aside class="pause-menu animate-in stagger-2">
+        <h2 class="pause-menu-title">Menu</h2>
+        <a class="menu-option active" href="#overview">Overview</a>
+        <a class="menu-option" href="#garage">Gallery</a>
+        <a class="menu-option" href="#mods">Mod Queue</a>
+        <a class="menu-option" href="#timeline">Timeline</a>
+      </aside>
 
-    <!-- Build Timeline -->
-    <div style="margin-top: 4rem;">
-      <h2 class="mb-3" style="font-family: var(--font-display); font-size: 2rem;">
-        <span style="color: var(--accent-secondary);">//</span> BUILD TIMELINE
-      </h2>
-      
-      <div class="card" style="padding: 2rem;">
-        <div style="display: flex; flex-direction: column; gap: 2rem;">
-    
-          <!-- 2026: Bought Sophia -->
-          <div style="display: flex; gap: 2rem; align-items: flex-start;">
-            <div style="font-family: var(--font-mono); color: var(--accent-tertiary); min-width: 100px;">2026</div>
-            <div>
-              <h4 style="font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 0.5rem;">
-                PURCHASED SOPHIA
-              </h4>
-              <p style="color: var(--text-secondary);">
-                Picked her up completely stock the start of our journey.
-              </p>
+      <section class="menu-content">
+        <article class="menu-panel animate-in stagger-2" id="overview">
+          <div class="panel-heading-wrap">
+            <span class="panel-index">01</span>
+            <h2 class="panel-heading">Vehicle Overview</h2>
+          </div>
+          <p class="panel-kicker">2026 Honda Civic Sport</p>
+          <p class="panel-copy">
+            She's my daily driver and completely stock right now, but not for long. Reliable for errands,
+            sporty enough to feel cinematic, and mod-friendly enough to become the build I pictured.
+          </p>
+          <div class="system-status">
+            <div class="status-item">
+              <span class="status-label">Current State</span>
+              <span class="status-value">Street Ready</span>
+            </div>
+            <div class="status-item">
+              <span class="status-label">Build Stage</span>
+              <span class="status-value">Early Progress</span>
+            </div>
+            <div class="status-item">
+              <span class="status-label">Persona</span>
+              <span class="status-value">Sophia</span>
             </div>
           </div>
-    
-          <!-- 2026: Door Sills + Lights -->
-          <div style="display: flex; gap: 2rem; align-items: flex-start;">
-            <div style="font-family: var(--font-mono); color: var(--accent-tertiary); min-width: 100px;">2026</div>
-            <div>
-              <h4 style="font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 0.5rem;">
-                FIRST UPGRADES
-              </h4>
-              <p style="color: var(--text-secondary);">
-                Added illuminated door sills and door lighting made her glow a bit.
-              </p>
+        </article>
+
+        <article class="menu-panel animate-in stagger-3" id="garage">
+          <div class="panel-heading-wrap">
+            <span class="panel-index">02</span>
+            <h2 class="panel-heading">Garage Gallery</h2>
+          </div>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="assets/Cars/base.jpg" alt="Sophia - Front View">
+              <div class="gallery-overlay">
+                <span class="gallery-caption">Front View</span>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/Cars/outside.jpg" alt="Sophia - Outside Shot">
+              <div class="gallery-overlay">
+                <span class="gallery-caption">Outside Shot</span>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/Cars/light.jpg" alt="Sophia - In the Garage">
+              <div class="gallery-overlay">
+                <span class="gallery-caption">In the Garage</span>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/Cars/tail.jpg" alt="Sophia - Wiring Work">
+              <div class="gallery-overlay">
+                <span class="gallery-caption">Installing Door Sills</span>
+              </div>
             </div>
           </div>
-    
-        </div>
-      </div>
+        </article>
+
+        <article class="menu-panel animate-in stagger-4" id="mods">
+          <div class="panel-heading-wrap">
+            <span class="panel-index">03</span>
+            <h2 class="panel-heading">Build Queue</h2>
+          </div>
+          <div class="mods-container">
+            <div class="mods-section mods-current">
+              <h3>Current Mods</h3>
+              <ul class="mod-list">
+                <li class="mod-item">Stock</li>
+                <li class="mod-item">Illuminated Door Sills</li>
+                <li class="mod-item">Window Tint</li>
+                <li class="mod-item">Sequential Taillights</li>
+                <li class="mod-item">Rear Bumper Light Upgrade</li>
+              </ul>
+            </div>
+            <div class="mods-section mods-planned">
+              <h3>Next Mods</h3>
+              <ul class="mod-list">
+                <li class="mod-item">Interior LED Light Kit</li>
+                <li class="mod-item">Front Lip Spoiler</li>
+                <li class="mod-item">Side Skirts</li>
+                <li class="mod-item">Rear Diffuser</li>
+                <li class="mod-item">Coilovers</li>
+                <li class="mod-item">Seat Covers</li>
+                <li class="mod-item">Purple Wrap</li>
+                <li class="mod-item">Exhaust</li>
+                <li class="mod-item">Cold Air Intake</li>
+                <li class="mod-item">Pedal Master</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-panel animate-in stagger-5" id="timeline">
+          <div class="panel-heading-wrap">
+            <span class="panel-index">04</span>
+            <h2 class="panel-heading">Timeline Log</h2>
+          </div>
+          <div class="timeline-log">
+            <div class="timeline-entry">
+              <span class="timeline-year">2026</span>
+              <div>
+                <h4>Purchased Sophia</h4>
+                <p>Picked her up completely stock and started the journey.</p>
+              </div>
+            </div>
+            <div class="timeline-entry">
+              <span class="timeline-year">2026</span>
+              <div>
+                <h4>First Upgrades</h4>
+                <p>Added illuminated door sills and door lighting for the first glow-up.</p>
+              </div>
+            </div>
+            <div class="timeline-entry">
+              <span class="timeline-year">2026</span>
+              <div>
+                <h4>Tail Lights</h4>
+                <p>Uninstalled the stock tail lights and installed sequential tailights.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
     </div>
-    
   </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-links">
-      <a href="index.html" class="footer-link">Home</a>
-      <a href="media.html" class="footer-link">Media</a>
+      <a href="menu.html" class="footer-link">Main Menu</a>
+      <a href="media.html" class="footer-link">Playlists</a>
+      <a href="rankings.html" class="footer-link">Rankings</a>
       <a href="cars.html" class="footer-link">Cars</a>
       <a href="hobbies.html" class="footer-link">Hobbies</a>
       <a href="professional.html" class="footer-link">Professional</a>
-      <a href="log.html" class="footer-link">Log</a>
     </div>
-    <p class="footer-copyright">© 2026 Brian. All rights reserved.</p>
+    <p class="footer-copyright">© 2026 Teddy <a href="deja.html" class="footer-ampersand">&</a> Otters LLC. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
